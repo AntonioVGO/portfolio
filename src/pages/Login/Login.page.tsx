@@ -1,6 +1,6 @@
 import { Button2 } from "../../components/atom/button/Button2.components";
 import { Input2 } from "../../components/atom/input/Input2.components";
-import { useForm } from '../../../hooks/useForm.hook';
+import { useForm } from '../../hooks/useForm.hook';
 
 
 interface FormI {
