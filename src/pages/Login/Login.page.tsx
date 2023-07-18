@@ -5,12 +5,12 @@ import { useNavigate } from "react-router-dom";
 import { AppContext } from "../../contexts/App.context";
 import { FormEvent, useContext } from "react";
 
-interface LoginResponse {
+export interface LoginResponse {
   user: User;
   token: string;
 }
 
-interface User {
+export interface User {
   name: string;
   email: string;
   role: string;
@@ -46,7 +46,7 @@ export const Login = () => {
         {
           method: 'POST',
           headers: {
-            'Content-Type': 'application/json; charset=UTF-8',
+            'content-type': 'application/json; charset=UTF-8',
           },
           body: JSON.stringify(formData)
         });
@@ -56,6 +56,7 @@ export const Login = () => {
         setUser(data.user);
         localStorage.setItem('token', data.token);
         localStorage.setItem('user', JSON.stringify(data.user));
+        navigate('/');
       }
     } catch (error) {
 
@@ -81,5 +82,7 @@ export const Login = () => {
     </main>
   )
 }
+
+
 
 
