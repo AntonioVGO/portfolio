@@ -4,6 +4,7 @@ import { Login } from "../pages/Login/Login.page"
 import { Registro } from "../pages/Registro/Registro.page"
 import { Weather } from "../pages/Weather/Weather.page"
 import { Error404 } from "../pages/404/Error404.page"
+import { ProtectedRoutes } from "./Protected.routes"
 
 
 export default () => {
@@ -12,9 +13,10 @@ export default () => {
             <Route path="/" element={<App />} />
             <Route path="/login" element={<Login />} />
             <Route path="/registro" element={<Registro />} />
-            <Route path="/weather" element={<Weather />} />
+            <Route element={<ProtectedRoutes />}>
+                <Route path="/weather" element={<Weather />} />
+            </Route>
             <Route path="*" element={<Error404 />} />
-
         </Routes>
     )
 }

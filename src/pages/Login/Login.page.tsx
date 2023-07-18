@@ -50,9 +50,13 @@ export const Login = () => {
           },
           body: JSON.stringify(formData)
         });
-      const data: LoginResponse = await resp.json()
-      setToken(data.token);
-      setUser(data.user);
+      const data: LoginResponse = await resp.json();
+      if (!!data.token) {
+        setToken(data.token);
+        setUser(data.user);
+        localStorage.setItem('token', data.token);
+        localStorage.setItem('user', JSON.stringify(data.user));
+      }
     } catch (error) {
 
     }
