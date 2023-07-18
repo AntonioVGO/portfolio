@@ -1,7 +1,7 @@
 import { Button2 } from "../../components/atom/button/Button2.components";
 import { Input2 } from "../../components/atom/input/Input2.components";
 import { useForm } from '../../hooks/useForm.hook';
-
+import { useNavigate } from "react-router-dom";
 
 interface FormI {
   email: string,
@@ -14,16 +14,22 @@ export const Login = () => {
 
   const {formData, onChange, resetForm} = useForm<FormI>(initialFormState)
 
+  const navigate = useNavigate();
+
 
   return (
-    <main className="flex w-screen h-screen justify-center items-center bg-slate-500">
-      <div className="flex flex-col p-5 rounded bg-cyan-400 w-full sm:w-4/6">
-        <h1 className="text-center font-bold text-black text-2xl">Formulario de Registro</h1>
+    <main className="flex w-screen h-screen justify-center items-center bg-white">
+      <div className="flex flex-col p-5 rounded bg-gray-800 w-full sm:w-4/6 text-white">
+        <h1 className="text-center font-bold text-white text-2xl">Login</h1>
         <Input2 labelText="Email:" type="email" value={formData.email} name="email" onChange={onChange} />
         <Input2 labelText="Contraseña" type="password" value={formData.password1} name="password1" onChange={onChange} />
         <div className="flex flex-row mt-3 w-full gap-2">
-          <Button2 text="Registrarse" />
+          <Button2 text="Login" />
           <Button2 text="Reset" variant="outlined" onClick={resetForm} />
+        </div>
+        <div className="flex flex-row mt-3 w-full gap-2">
+          <p>¿No estás registrado?</p>
+          <p>Haz click</p><button onClick={() => navigate("/registro")} className="hover:text-sky-600 active:text-sky-800 transition duration-150 ease-in-out">AQUÍ</button>
         </div>
       </div>
     </main>

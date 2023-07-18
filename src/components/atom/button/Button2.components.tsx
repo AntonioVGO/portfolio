@@ -13,7 +13,7 @@ export const Button2: React.FC<ButtonProps> = ({ onClick, text, variant = 'fille
     if(variant === 'filled'){
         style = `${style} bg-sky-500 hover:bg-sky-600 text-white`
     } else {
-        style = `${style} bg-transparent hover:bg-sky-500 text-blue-700 border border-blue-500 hover:border-transparent hover:text-white`
+        style = `${style} bg-transparent hover:bg-sky-600 text-sky-500 border border-sky-500 hover:border-transparent hover:text-white`
     }
 
     return (
