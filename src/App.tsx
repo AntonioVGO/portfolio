@@ -50,7 +50,7 @@ const App = () => {
 
           <nav className="flex flex-col w-full py-4">
             <ul className="text-white flex flex-row gap-5 justify-end items-end pr-3">
-              <li><a href="https://www.facebook.com/Tono.VGO/?viewas=100000686899395" target="_blank">FACEBOOK</a></li>
+              <li><a href="https://www.behance.net/tonovgo" target="_blank">BEHANCE</a></li>
               <li><a href="#">INSTAGRAM</a></li>
               <li><a href="#">LINKEDIN</a></li>
             </ul>

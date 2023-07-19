@@ -14,6 +14,7 @@ export default () => {
     return (
         <Routes>
             <Route path="/" element={<App />} />
+            <Route path={"/portfolio"} element={<Navigate to ={"/"}/>} />
             <Route path="/login" element={<Login />} />
             <Route path="/registro" element={<Registro />} />
             <Route path="/portfolio" element={<Portfolio />} />
@@ -23,7 +24,6 @@ export default () => {
                 <Route path="/weather" element={<Weather />} />
             </Route>
             <Route path="*" element={<Error404 />} />
-            <Route path={"/portfolio"} element={<Navigate to ={"/"}/>} />
         </Routes>
     )
 }
