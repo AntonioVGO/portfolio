@@ -12,7 +12,7 @@ export const IconoTiempo = () => {
   return (
     <>
       <p className="text-white">{data?.current.temp_c}°</p>
-      <img src={data?.current.condition.icon}></img>
+      <img src={data?.current.condition.icon} className="w-9"></img>
     </>
   )
 }
