@@ -51,8 +51,8 @@ const App = () => {
           <nav className="flex flex-col w-full py-4">
             <ul className="text-white flex flex-row gap-5 justify-end items-end pr-3">
               <li><a href="https://www.behance.net/tonovgo" target="_blank">BEHANCE</a></li>
-              <li><a href="#">INSTAGRAM</a></li>
-              <li><a href="#">LINKEDIN</a></li>
+              <li><a href="https://www.instagram.com/dago_rk/" target="_blank">INSTAGRAM</a></li>
+              <li><a href="https://es.linkedin.com/in/tonovgo" target="_blank">LINKEDIN</a></li>
             </ul>
           </nav>
         </footer>
