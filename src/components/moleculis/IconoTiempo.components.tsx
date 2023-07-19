@@ -11,8 +11,10 @@ export const IconoTiempo = () => {
 
   return (
     <>
-      <p className="text-white">{data?.current.temp_c}°</p>
-      <img src={data?.current.condition.icon} className="w-9"></img>
+      <div className="flex flex-row justify-center items-center text-sm sm:text-xs md:text-sm lg:text-base xl:text-lg">
+        <p className="text-white">{data?.current.temp_c}°</p>
+        <img src={data?.current.condition.icon} className="w-9"></img>
+      </div>
     </>
   )
 }
