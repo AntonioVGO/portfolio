@@ -17,7 +17,7 @@ export default () => {
             <Route path={"/portfolio"} element={<Navigate to ={"/"}/>} />
             <Route path="/login" element={<Login />} />
             <Route path="/registro" element={<Registro />} />
-            <Route path="/portfolio" element={<Portfolio />} />
+            <Route path="/portfol" element={<Portfolio />} />
             <Route path="/about" element={<About />} />
             <Route path="/contacto" element={<Contacto />} />
             <Route element={<ProtectedRoutes />}>

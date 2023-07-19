@@ -19,7 +19,7 @@ export const Header = () => {
 
       <nav className="flex flex-col w-full py-4">
         <ul className="text-white flex flex-row gap-5 font-bold justify-end items-end pr-3">
-          <li><button onClick={() => navigate("/portfolio")}>PORTFOLIO</button></li>
+          <li><button onClick={() => navigate("/portfol")}>PORTFOLIO</button></li>
           <li><button onClick={() => navigate("/about")}>SOBRE MÍ</button></li>
           <li><button onClick={() => navigate("/contacto")}>CONTACTO</button></li>
           <li className="ml-2 h-5/6"><Button2 text="LOGIN / REGISTRO" onClick={() => navigate("/login")} /></li>
