@@ -4,13 +4,14 @@ import { useForm } from '../../hooks/useForm.hook';
 import { useNavigate } from "react-router-dom";
 import { AppContext } from "../../contexts/App.context";
 import { FormEvent, useContext } from "react";
+import { Header } from "../../components/moleculis/Header.components";
 
-interface LoginResponse {
+export interface LoginResponse {
   user: User;
   token: string;
 }
 
-interface User {
+export interface User {
   name: string;
   email: string;
   role: string;
@@ -46,7 +47,7 @@ export const Login = () => {
         {
           method: 'POST',
           headers: {
-            'Content-Type': 'application/json; charset=UTF-8',
+            'content-type': 'application/json; charset=UTF-8',
           },
           body: JSON.stringify(formData)
         });
@@ -56,6 +57,7 @@ export const Login = () => {
         setUser(data.user);
         localStorage.setItem('token', data.token);
         localStorage.setItem('user', JSON.stringify(data.user));
+        navigate('/');
       }
     } catch (error) {
 
@@ -64,22 +66,26 @@ export const Login = () => {
 
 
   return (
-    <main className="flex w-screen h-screen justify-center items-center bg-white">
-      <div className="flex flex-col p-5 rounded bg-gray-800 w-full sm:w-4/6">
-        <h1 className="text-center font-bold text-white text-2xl">Login</h1>
-        <Input2 labelText="Email:" type="email" value={formData.email} name="email" onChange={onChange} />
-        <Input2 labelText="Contraseña" type="password" value={formData.password} name="password" onChange={onChange} />
-        <div className="flex flex-row mt-3 w-full gap-2">
-          <Button2 onClick={onSubmit} text="Login" />
-          <Button2 text="Reset" variant="outlined" onClick={resetForm} />
+    <>
+      <Header />
+      <main className="flex w-screen h-screen justify-center bg-gradient-to-tl from-rose-500 to-indigo-700">
+        <div className="flex flex-col p-5 rounded bg-gray-800 w-full h-fit mt-40 sm:w-4/6">
+          <h1 className="text-center font-bold text-white text-2xl">Login</h1>
+          <Input2 labelText="Email:" type="email" value={formData.email} name="email" onChange={onChange} />
+          <Input2 labelText="Contraseña" type="password" value={formData.password} name="password" onChange={onChange} />
+          <div className="flex flex-row mt-3 w-full gap-2">
+            <Button2 onClick={onSubmit} text="Login" />
+            <Button2 text="Reset" variant="outlined" onClick={resetForm} />
+          </div>
+          <div className="flex flex-row mt-3 w-full gap-2 text-white">
+            <p>¿No estás registrado?</p>
+            <p>Haz click</p><button onClick={() => navigate("/registro")} className="hover:text-sky-600 active:text-sky-800 transition duration-150 ease-in-out">AQUÍ</button>
+          </div>
         </div>
-        <div className="flex flex-row mt-3 w-full gap-2 text-white">
-          <p>¿No estás registrado?</p>
-          <p>Haz click</p><button onClick={() => navigate("/registro")} className="hover:text-sky-600 active:text-sky-800 transition duration-150 ease-in-out">AQUÍ</button>
-        </div>
-      </div>
-    </main>
+      </main>
+    </>
   )
 }
+
 
 
