@@ -7,7 +7,7 @@ export const IconoTiempo = () => {
 
   const [location] = useState<string>('Cáceres');
 
-  const { data } = useFetch<Weather>({ url: `http://api.weatherapi.com/v1/current.json?key=c56bb0dd602c49438ba82122231307&q=${location}&aqi=no` })
+  const { data } = useFetch<Weather>({ url: `https://api.weatherapi.com/v1/current.json?key=c56bb0dd602c49438ba82122231307&q=${location}&aqi=no` })
 
   return (
     <>
