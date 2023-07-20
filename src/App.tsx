@@ -26,7 +26,7 @@ const App = () => {
             <section className="mt-20 w-full h-full flex-row">
               <div className="flex mt-20 w-full bg-white">
                 <img src={cloudImg} className="w-7/12"></img>
-                <div className="flex items-center p-5 text-xs  md:text-xl xl:text-2xl">
+                <div className="flex items-center p-5 text-xs  md:text-lg xl:text-2xl">
                   <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores exercitationem impedit consequatur rem debitis, eos quibusdam animi explicabo inventore ullam eligendi aliquam incidunt facilis cupiditate laboriosam fugiat tempora. Illum, cumque.</p>
                 </div>
               </div>
