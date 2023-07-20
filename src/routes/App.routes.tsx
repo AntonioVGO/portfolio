@@ -1,4 +1,4 @@
-import { Navigate, Route, Routes } from "react-router-dom"
+import { Route, Routes } from "react-router-dom"
 import App from "../App"
 import { Login } from "../pages/Login/Login.page"
 import { Registro } from "../pages/Registro/Registro.page"
@@ -14,7 +14,6 @@ export default () => {
     return (
         <Routes>
             <Route path="/" element={<App />} />
-            <Route path={"/portfolio"} element={<Navigate to ={"/"}/>} />
             <Route path="/login" element={<Login />} />
             <Route path="/registro" element={<Registro />} />
             <Route path="/portfol" element={<Portfolio />} />
