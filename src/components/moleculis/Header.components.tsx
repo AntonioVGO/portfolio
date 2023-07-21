@@ -18,11 +18,11 @@ export const Header = () => {
     };
 
   return (
-    <nav className="bg-white border-gray-200 dark:bg-gray-900 pr-5">
+    <nav className="bg-white border-gray-200 dark:bg-gray-900 px-3">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <button onClick={() => navigate("/")} className="flex items-center">
           <img src={nombredarkImg} className="h-8 mr-3 dark:hidden"/>
-          <img src={nombreImg} className="h-8 mr-3 collapse dark:visible"/>
+          <img src={nombreImg} className="h-8 mr-3 hidden dark:block"/>
           <span className="self-center text-DM font-semibold whitespace-nowrap dark:text-white">TOÑO VARGAS</span>
         </button>
 
