@@ -2,7 +2,6 @@ import { Header } from "./components/moleculis/Header.components";
 import letrasImg from "./assets/img/letras.png"
 import personaImg from "./assets/img/persona.png"
 import cloudImg from "./assets/img/05.jpg"
-import { Footer } from "./components/moleculis/Footer.components";
 
 const App = () => {
 
@@ -41,7 +40,19 @@ const App = () => {
             </section>
           </main>
 
-          <Footer />
+          <footer className="flex flex-row content-between w-full mt-10 px-5 py-3 bg-gray-900">
+            <div className="flex flex-row w-full text-white py-4 space-x-5 text-xs sm:text-xs  lg:text-base xl:text-lg md:block justify-center">
+              <p>© 2023 TOÑO VARGAS - TODOS LOS DERECHOS RESERVADOS</p>
+            </div>
+
+            <nav className="flex-col w-full py-4 md:block md:w-auto hidden">
+              <ul className="text-white flex flex-row gap-5 justify-end items-end pr-3 text-sm sm:text-xs md:text-sm lg:text-base xl:text-lg">
+                <li><a href="https://www.behance.net/tonovgo" target="_blank">BEHANCE</a></li>
+                <li><a href="https://www.instagram.com/dago_rk/" target="_blank">INSTAGRAM</a></li>
+                <li><a href="https://es.linkedin.com/in/tonovgo" target="_blank">LINKEDIN</a></li>
+              </ul>
+            </nav>
+          </footer>
 
         </div>
       </div>
