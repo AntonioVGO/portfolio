@@ -18,7 +18,7 @@ export const NavFooter: React.FC<NavFooterProps> = ({ text, text1, text2, text3 
     return (
 
         <>
-            <nav className="bg-gray-200 border-gray-200 dark:bg-gray-900 md:p-3">
+            <nav className="bg-gray-300 border-gray-200 dark:bg-gray-900 md:p-3">
                 <div className="max-w-screen-xl flex flex-wrap items-center justify-center md:justify-between mx-auto p-4">
                     <div className="flex flex-col justify-center items-center">
                         <span className="self-center text-DM whitespace-nowrap dark:text-white text-xs sm:text-xs  lg:text-base xl:text-lg">{text}</span>
@@ -31,7 +31,7 @@ export const NavFooter: React.FC<NavFooterProps> = ({ text, text1, text2, text3 
                     </div>
 
                     <div className={`${hidden ? "block" : "hidden"} w-full md:block md:w-auto`}>
-                        <ul className="flex flex-row justify-between p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-gray-200 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700 dark:text-white text-xs sm:text-xs  lg:text-base xl:text-lg">
+                        <ul className="flex flex-row justify-between p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-gray-300 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700 dark:text-white text-xs sm:text-xs  lg:text-base xl:text-lg">
                             <li><a href="https://www.behance.net/tonovgo" target="_blank">{text1}</a></li>
                             <li><a href="https://www.instagram.com/dago_rk/" target="_blank">{text2}</a></li>
                             <li><a href="https://es.linkedin.com/in/tonovgo" target="_blank">{text3}</a></li>

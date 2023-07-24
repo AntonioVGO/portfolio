@@ -4,7 +4,7 @@ import personaImg from "./assets/img/persona.png"
 import personadarkImg from "./assets/img/personadark.png"
 import cloudImg from "./assets/img/05.jpg"
 import Layout from "./components/layout/Layout";
-import { TempImgImg } from "./components/moleculis/TempImgImg.components"
+import { TempImgImg } from "./components/templates/TempImgImg.components"
 import { TempTxtImg } from "./components/templates/TempTxtImg.components"
 import { TempImgTxt } from "./components/templates/TempImgTxt.components"
 
