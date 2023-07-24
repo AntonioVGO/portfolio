@@ -20,7 +20,7 @@ const App = () => {
             
             <TempImgImg img1={letrasImg} img2={letrasdarkImg} img3={personadarkImg} img4={personaImg}/>
 
-            <section className="mt-20 w-full flex-col">
+            <section className="w-full flex-col">
               
               <TempImgTxt img={cloudImg} text="Programador junior fullstack: SQL, Java, Javascript, React, HTML, CSS"/>
 
