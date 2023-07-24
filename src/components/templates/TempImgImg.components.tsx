@@ -18,8 +18,8 @@ export const TempImgImg: React.FC<TempImgImgProps> = ({ img1, img2, img3, img4 }
                 </div>
 
                 <div className="flex justify-center w-6/12">
-                    <img className="w-4/12 dark:hidden" src={img3}></img>
-                    <img className="w-4/12 hidden dark:block" src={img4}></img>
+                    <img className="w-6/12 dark:hidden" src={img3}></img>
+                    <img className="w-6/12 hidden dark:block" src={img4}></img>
                 </div>
             </section>
         </>

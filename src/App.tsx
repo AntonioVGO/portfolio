@@ -18,7 +18,7 @@ const App = () => {
 
           <main className="flex flex-col justify-center w-full mt-20">
             
-            <TempImgImg img1={letrasImg} img2={letrasdarkImg} img3={personadarkImg} img4={personaImg}/>
+            <TempImgImg img1={letrasImg} img2={letrasdarkImg} img3={personaImg} img4={personadarkImg}/>
 
             <section className="w-full flex-col">
               
