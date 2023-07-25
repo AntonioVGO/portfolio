@@ -25,7 +25,7 @@ export const NavFooter: React.FC<NavFooterProps> = ({ text, text1, text2, text3 
 
                         <button onClick={toggleHidden} className="inline-flex items-center w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden focus:outline-none dark:text-gray-400">
                             <svg className="w-3 h-3" fill="none" viewBox="5 0 15 14">
-                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"></path>
+                                <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 1h15M1 7h15M1 13h15"></path>
                             </svg>
                         </button>
                     </div>
