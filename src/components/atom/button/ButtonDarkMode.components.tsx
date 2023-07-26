@@ -6,7 +6,7 @@ interface ButtonDarkModeProps {
 
 export const ButtonDarkMode: React.FC<ButtonDarkModeProps> = ({ children }) => {
 
-    let style = 'w-full py-[5px] text-xs bg-gray-500 text-white font-semibold transition duration-150 ease-in-out active:bg-gray-900'
+    let style = 'flex justify-center items-center w-full h-full text-xs bg-gray-500 text-white font-semibold transition duration-150 ease-in-out active:bg-gray-900'
 
     const [darkMode, setDarkMode] = useState(false);
 

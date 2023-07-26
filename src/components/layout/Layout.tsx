@@ -10,11 +10,11 @@ interface LayoutProps {
 const Layout: React.FC<LayoutProps> = ({ children }) => {
     return (
         <>
-            <div className="h-full">
+            <div>
                 <ButtonDarkMode>
-                    <div className="min-w-[374px] h-full bg-gradient-to-tl from-rose-500 to-indigo-700">
+                    <div className="min-w-[374px] bg-gradient-to-tl from-rose-500 to-indigo-700">
                         <Header />
-                        <div className="h-full">{children}</div>
+                        <div className="h-full min-h-screen">{children}</div>
                         <Footer />
                     </div>
                 </ButtonDarkMode>

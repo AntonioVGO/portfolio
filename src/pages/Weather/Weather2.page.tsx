@@ -7,7 +7,9 @@ export const Weather2 = () => {
     return (
         <>
             <Layout>
-                <WeatherCard/>
+                <div className="flex justify-center">
+                    <WeatherCard />
+                </div>
             </Layout>
 
         </>

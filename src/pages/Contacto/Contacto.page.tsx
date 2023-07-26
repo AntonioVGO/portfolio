@@ -23,7 +23,7 @@ export const Contacto = () => {
     return (
         <>
             <Layout>
-                <main className="h-screen">
+                <main className="h-full min-h-screen">
                     <form ref={form} onSubmit={sendEmail} className="flex justify-center">
                         <div className="flex flex-col p-5 rounded bg-white dark:bg-gray-800 w-full m-20 sm:w-4/6">
                             <h1 className="text-center font-bold text-black dark:text-white text-2xl mb-5">Formulario de Contacto</h1>

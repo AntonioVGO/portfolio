@@ -68,7 +68,7 @@ export const Login = () => {
   return (
     <>
       <Layout>
-        <main className="h-screen">
+        <main className="h-full min-h-screen">
           <div className="flex justify-center">
             <div className="flex flex-col bg-white dark:bg-gray-800 p-5 rounded w-full m-20 sm:w-4/6">
               <h1 className="text-center font-bold text-black dark:text-white text-2xl mb-5">Login</h1>
